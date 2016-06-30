@@ -17,13 +17,14 @@ If you have a qcom powered device which needs CodeAuroraForum (CAF) BT trees ple
 
 To initialize your local repository using the AICP trees, use one of the following commands (without any device/kernel/vendor):
 
-Init core trees for google, exynos and non CodeAuroraForum devices:
+Init core trees for google, exynos and non CodeAuroraForum devices OLD LINK:
 
     $ repo init -u https://github.com/AICP/platform_manifest.git -b kitkat
 
-for devices which are using CodeAuroraForum trees:
+for devices which are using CodeAuroraForum trees - HUAWEI Y300, G510, G330:
 
-    $ repo init -u https://github.com/AICP/platform_manifest.git -b kitkat-caf
+    original: $ repo init -u https://github.com/AICP/platform_manifest.git -b kitkat-caf
+    modded:   $ repo init -u https://github.com/adeii/AICP_Huawei-manifest.git -b kitkat-caf
 
 sync repo :
 
@@ -34,15 +35,15 @@ sync repo :
 Building
 --------
 
-After the sync is finished, please read the [instructions from the Android site](http://s.android.com/source/building.html) on how to build.
+After the sync is finished, please read the [instructions from the Android site](http://s.android.com/source/building.html) on how to build. 
+*** Maybe /vendor/aicp/product/u8833.mk and u8825.mk and u8951.mk should be made from /device/huawei/u8xx/cm.mk 
 
     . build/envsetup.sh
-    brunch
-
-
-You can also build (and see how long it took) for specific devices like this:
-
-    . build/envsetup.sh
-    time brunch m7
+For Y300:
+    brunch u8833
+For G510:
+    brunch u8951
+For G330:
+    brunch u8825
 
 Remember to `make clobber` every now and then!
