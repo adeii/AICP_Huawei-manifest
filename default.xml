@@ -366,7 +366,7 @@
   <project path="packages/apps/KernelTweaker" name="AICP/packages_apps_KernelTweaker" remote="aicp" revision="kitkat" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" />
   <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" groups="notdefault,legacypackages" />
-  <project path="packages/apps/Launcher3" name="AOKP/packages_apps_Launcher3" remote="aokp" revision="kitkat" />
+  <project path="packages/apps/Launc /her3" name="AOKP/packages_apps_Launcher3" remote="aokp" revision="kitkat" />
   <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" />
   <project path="packages/apps/Mms" name="AICP/packages_apps_Mms" remote="aicp" revision="kitkat" />
   <project path="packages/apps/Music" name="platform/packages/apps/Music" groups="notdefault,legacypackages" />
@@ -509,4 +509,24 @@
   <!-- MonthCalendarWidget -->
   <project path="packages/apps/MonthCalendarWidget" name="omnirom/android_packages_apps_MonthCalendarWidget" remote="omni" revision="android-4.4" />
 
+<!-- HUAWEI Device Folders, Kernel & Proprietary BLOBS -->
+  <project path="vendor/huawei" name="chil360/proprietary_vendor_huawei" remote="githubslim" revision="cm-11.0"/>
+  <project path="kernel/huawei/huawei-kernel-3.4" name="chil360/chil360-kernel" remote="githubslim" revision="kitkat"/>
+  <project path="device/huawei/msm7x27a-common" name="chil360/android_device_huawei_msm7x27a-common" remote="github" revision="cm-11.0"/>
+  <project path="device/huawei/u8833" name="chil360/android_device_huawei_u8833" remote="github" revision="cm-11.0"/>
+  <project path="device/huawei/u8951" name="chil360/android_device_huawei_u8951" remote="github" revision="cm-11.0"/>
+  <project path="device/huawei/u8825" name="chil360/android_device_huawei_u8825" remote="github" revision="cm-11.0"/>
+
+  <!-- WIFI -->
+  <project path="hardware/atheros/wifi/ath6kl-huawei" name="Dazzozo/android_hardware_atheros_wifi_ath6kl-huawei" remote="githubslim" revision="master" />
+  <project path="hardware/atheros/wlan" name="legaCyMod/android_hardware_atheros_wlan" remote="githubslim" revision="cm-11.0" />
+
+  <!-- QCOM Hardware -->
+  <project path="hardware/qcom/audio-caf" name="SlimRoms/hardware_qcom_audio" remote="githubslim" revision="kk4.4" />  
+  <project path="hardware/qcom/display-caf" name="SlimRoms/hardware_qcom_display" remote="githubslim" revision="kk4.4" />  
+  <project path="hardware/qcom/media-caf" name="SlimRoms/hardware_qcom_media" remote="github" revision="kk4.4" />
+	
+  <!-- UBERTC toolchains -->
+ <!-- project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="UBERTC/arm-eabi-4.9" remote="bb" revision="master" / -->
+<!-- project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="UBERTC/arm-linux-androideabi-4.8" remote="bb" revision="master" / -->
 </manifest>
