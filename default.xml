@@ -518,13 +518,13 @@
   <project path="device/huawei/u8825" name="chil360/android_device_huawei_u8825" remote="github" revision="cm-11.0"/>
 
   <!-- WIFI -->
-  <project path="hardware/atheros/wifi/ath6kl-huawei" name="Dazzozo/android_hardware_atheros_wifi_ath6kl-huawei" remote="githubslim" revision="master" />
-  <project path="hardware/atheros/wlan" name="legaCyMod/android_hardware_atheros_wlan" remote="githubslim" revision="cm-11.0" />
+  <project path="hardware/atheros/wifi/ath6kl-huawei" name="Dazzozo/android_hardware_atheros_wifi_ath6kl-huawei" remote="githubm" revision="master" />
+  <project path="hardware/atheros/wlan" name="legaCyMod/android_hardware_atheros_wlan" remote="slim" revision="cm-11.0" />
 
   <!-- QCOM Hardware -->
-  <project path="hardware/qcom/audio-caf" name="SlimRoms/hardware_qcom_audio" remote="githubslim" revision="kk4.4" />  
-  <project path="hardware/qcom/display-caf" name="SlimRoms/hardware_qcom_display" remote="githubslim" revision="kk4.4" />  
-  <project path="hardware/qcom/media-caf" name="SlimRoms/hardware_qcom_media" remote="github" revision="kk4.4" />
+  <project path="hardware/qcom/audio-caf" name="SlimRoms/hardware_qcom_audio" remote="slim" revision="kk4.4" />  
+  <project path="hardware/qcom/display-caf" name="SlimRoms/hardware_qcom_display" remote="slim" revision="kk4.4" />  
+  <project path="hardware/qcom/media-caf" name="SlimRoms/hardware_qcom_media" remote="slim" revision="kk4.4" />
 	
   <!-- UBERTC toolchains -->
  <!-- project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="UBERTC/arm-eabi-4.9" remote="bb" revision="master" / -->
