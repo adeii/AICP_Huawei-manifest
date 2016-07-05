@@ -514,16 +514,16 @@
   <project path="packages/apps/MonthCalendarWidget" name="omnirom/android_packages_apps_MonthCalendarWidget" remote="omni" revision="android-4.4" />
 
 <!-- HUAWEI Device Folders, Kernel & Proprietary BLOBS -->
-  <project path="vendor/huawei" name="chil360/proprietary_vendor_huawei" remote="githubslim" revision="cm-11.0"/>
-  <project path="kernel/huawei/huawei-kernel-3.4" name="chil360/chil360-kernel" remote="githubslim" revision="kitkat"/>
+  <project path="vendor/huawei" name="chil360/proprietary_vendor_huawei" remote="github" revision="cm-11.0"/>
+  <project path="kernel/huawei/huawei-kernel-3.4" name="chil360/chil360-kernel" remote="github" revision="kitkat"/>
   <project path="device/huawei/msm7x27a-common" name="chil360/android_device_huawei_msm7x27a-common" remote="github" revision="cm-11.0"/>
   <project path="device/huawei/u8833" name="chil360/android_device_huawei_u8833" remote="github" revision="cm-11.0"/>
   <project path="device/huawei/u8951" name="chil360/android_device_huawei_u8951" remote="github" revision="cm-11.0"/>
   <project path="device/huawei/u8825" name="chil360/android_device_huawei_u8825" remote="github" revision="cm-11.0"/>
 
   <!-- WIFI -->
-  <project path="hardware/atheros/wifi/ath6kl-huawei" name="Dazzozo/android_hardware_atheros_wifi_ath6kl-huawei" remote="githubm" revision="master" />
-  <project path="hardware/atheros/wlan" name="legaCyMod/android_hardware_atheros_wlan" remote="slim" revision="cm-11.0" />
+  <project path="hardware/atheros/wifi/ath6kl-huawei" name="Dazzozo/android_hardware_atheros_wifi_ath6kl-huawei" remote="github" revision="master" />
+  <project path="hardware/atheros/wlan" name="legaCyMod/android_hardware_atheros_wlan" remote="github" revision="cm-11.0" />
 
   <!-- QCOM Hardware -->
   <project path="hardware/qcom/audio-caf" name="SlimRoms/hardware_qcom_audio" remote="slim" revision="kk4.4" />  
