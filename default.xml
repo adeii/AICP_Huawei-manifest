@@ -64,6 +64,12 @@
   <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" remote="cm" revision="cm-12.1" />
   <project path="device/qcom/sepolicy" name="CyanogenMod/android_device_qcom_sepolicy" remote="cm" revision="cm-12.1" />
   <project path="device/sample" name="device/sample" groups="pdk" />
+  <project path="vendor/huawei" name="SlimLP-Y300/proprietary_vendor_huawei" remote="github" revision="lp5.1"/>
+  <project path="kernel/huawei/huawei-kernel-3.4" name="SlimLP-Y300/chil360-kernel" remote="github" revision="lp5.1"/>
+  <project path="device/huawei/msm7x27a-common" name="SlimLP-Y300/android_device_huawei_msm7x27a-common" remote="github" revision="lp5.1"/>
+  <project path="device/huawei/u8833" name="SlimLP-Y300/android_device_huawei_u8833" remote="github" revision="lp5.1"/>
+  <project path="device/huawei/u8951" name="SlimLP-Y300/android_device_huawei_u8951" remote="github" revision="lp5.1"/>
+  <project path="device/huawei/u8825" name="SlimLP-Y300/android_device_huawei_u8825" remote="github" revision="lp5.1"/>
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs" />
@@ -374,20 +380,6 @@
   <project path="frameworks/volley" name="CyanogenMod/android_frameworks_volley" remote="cm" revision="cm-12.1" />
   <project path="frameworks/webview" name="CyanogenMod/android_frameworks_webview" remote="cm" revision="cm-12.1" />
   <project path="frameworks/wilhelm" name="CyanogenMod/android_frameworks_wilhelm" remote="cm" revision="cm-12.1" />
-<!--  <project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel" />
-  <project path="hardware/intel/bootstub" name="platform/hardware/intel/bootstub" groups="intel" />
-  <project path="hardware/intel/common/bd_prov" name="platform/hardware/intel/common/bd_prov" groups="intel" />
-  <project path="hardware/intel/common/libmix" name="platform/hardware/intel/common/libmix" groups="intel" />
-  <project path="hardware/intel/common/libstagefrighthw" name="platform/hardware/intel/common/libstagefrighthw" groups="intel" />
-  <project path="hardware/intel/common/libva" name="platform/hardware/intel/common/libva" groups="intel" />
-  <project path="hardware/intel/common/libwsbm" name="platform/hardware/intel/common/libwsbm" groups="intel" />
-  <project path="hardware/intel/common/omx-components" name="platform/hardware/intel/common/omx-components" groups="intel" />
-  <project path="hardware/intel/common/utils" name="platform/hardware/intel/common/utils" groups="intel" />
-  <project path="hardware/intel/common/wrs_omxil_core" name="platform/hardware/intel/common/wrs_omxil_core" groups="intel" />
-  <project path="hardware/intel/img/hwcomposer" name="platform/hardware/intel/img/hwcomposer" groups="intel" />
-  <project path="hardware/intel/img/libdrm" name="platform/hardware/intel/img/libdrm" groups="intel" />
-  <project path="hardware/intel/img/psb_headers" name="platform/hardware/intel/img/psb_headers" groups="intel" />
-  <project path="hardware/intel/img/psb_video" name="platform/hardware/intel/img/psb_video" groups="intel" /> -->
   <project path="hardware/akm" name="CyanogenMod/android_hardware_akm" remote="cm" revision="cm-12.1" groups="pdk" />
   <project path="hardware/broadcom/libbt" name="CyanogenMod/android_hardware_broadcom_libbt" remote="cm" revision="cm-12.1" groups="pdk" />
   <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" remote="cm" revision="cm-12.1" groups="broadcom_wlan" />
@@ -411,7 +403,12 @@
   <project path="hardware/qcom/display-caf/msm8960" name="CyanogenMod/android_hardware_qcom_display" groups="qcom,qcom_display" remote="cm" revision="cm-12.1-caf-8960" />
   <project path="hardware/qcom/display-caf/msm8974" name="CyanogenMod/android_hardware_qcom_display" groups="qcom,qcom_display" remote="cm" revision="cm-12.1-caf-8974" />
   <project path="hardware/qcom/display-caf/msm8994" name="CyanogenMod/android_hardware_qcom_display" groups="qcom,qcom_display" remote="cm" revision="cm-12.1-caf-8994" />
-  <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" remote="cm" revision="cm-12.1" groups="qcom" />
+  <project path="hardware/qcom/display-caf/msm7x27a" name="SlimLP-Y300/android_hardware_qcom_display-caf" remote="github" revision="lp5.1" />
+  <project path="hardware/qcom/media-caf/msm7x27a" name="SlimLP-Y300/hardware_qcom_media" remote="github" revision="lp5.1" />
+  <!-- project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" remote="cm" revision="cm-12.1" groups="qcom" / -->
+  <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" remote="github" revision="cm-11.0" />
+  <project path="hardware/atheros/wifi/ath6kl-huawei" name="SlimLP-Y300/android_hardware_atheros_wifi_ath6kl-huawei" remote="github" revision="master" />
+  <project path="hardware/atheros/wlan" name="CyanogenMod/android_hardware_atheros_wlan" remote="github" revision="cm-12.1" />
   <project path="hardware/qcom/keymaster" name="CyanogenMod/android_hardware_qcom_keymaster" remote="cm" revision="cm-12.1" groups="qcom" />
   <project path="hardware/qcom/media/default" name="CyanogenMod/android_hardware_qcom_media" remote="cm" revision="cm-12.1" groups="qcom" />
   <project path="hardware/qcom/media-caf/apq8084" name="CyanogenMod/android_hardware_qcom_media" groups="qcom" remote="cm" revision="cm-12.1-caf-8084" />
