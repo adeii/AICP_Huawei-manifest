@@ -30,7 +30,9 @@
            fetch="https://github.com/"
            review="http://gerrit.dirtyunicorns.com" />
 
-  <default revision="refs/tags/android-6.0.1_r46"
+  <remote name="bucket" fetch="https://bitbucket.org" revision="master" />
+
+  <default revision="refs/tags/android-6.0.1_r72"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
@@ -249,6 +251,7 @@
   <project path="packages/screensavers/Basic" name="CyanogenMod/android_packages_screensavers_Basic" groups="pdk-fs" remote="cm" />
   <project path="packages/screensavers/PhotoTable" name="CyanogenMod/android_packages_screensavers_PhotoTable" groups="pdk-fs" remote="cm" />
   <project path="packages/screensavers/WebView" name="CyanogenMod/android_packages_screensavers_WebView" groups="pdk-fs" remote="cm" />
+  <project path="packages/services/CMAudioService" name="CyanogenMod/android_packages_services_CMAudioService" groups="pdk-cw-fs,pdk-fs" remote="cm" />
   <project path="packages/services/Mms" name="CyanogenMod/android_packages_services_Mms" groups="pdk-cw-fs,pdk-fs" remote="cm" />
   <project path="packages/wallpapers/Basic" name="CyanogenMod/android_packages_wallpapers_Basic" groups="pdk-fs" remote="cm" />
   <project path="packages/wallpapers/Galaxy4" name="CyanogenMod/android_packages_wallpapers_Galaxy4" groups="pdk-fs" remote="cm" />
@@ -299,6 +302,8 @@
   <project path="packages/providers/ThemesProvider" name="AICP/packages_providers_ThemesProvider" remote="aicp" />
   <project path="packages/services/Telephony" name="AICP/packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="aicp" />
   <project path="packages/services/Telecomm" name="AICP/packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="aicp" />
+  <project path="packages/services/ThemeManagerService" name="AICP/packages_services_ThemeManagerService" groups="pdk-cw-fs,pdk-fs" remote="aicp" />
+  <project path="packages/themes/HexoLibre" name="AICP/packages_themes_HexoLibre" groups="themes" remote="aicp" />
   <project path="system/core" name="AICP/system_core" groups="pdk" remote="aicp" />
   <project path="vendor/aicp" name="AICP/vendor_aicp" remote="aicp" />
   <project path="vendor/cmsdk" name="AICP/vendor_cmsdk" remote="aicp" />
@@ -520,13 +525,20 @@
   <project path="system/gatekeeper" name="platform/system/gatekeeper" fgroups="pdk" remote="aosp" />
   <!-- END AOSP -->
   <!-- Add Huawei u8xxx support -->
-     <!-- Device Folders, Kernel & Proprietary BLOBS -->
+<!-- Device Folders, Kernel & Proprietary BLOBS Slim6 tree
      <project path="vendor/huawei" name="CM13-Y300/proprietary_vendor_huawei" remote="github" revision="cm-13.0"/>
      <project path="kernel/huawei/huawei-kernel-3.4" name="SlimLP-Y300/chil360-kernel" remote="github" revision="mm6.0"/>
-     <project path="device/huawei/msm7x27a-common" name="SlimLP-Y300/android_device_huawei_msm7x27a-common" remote="github" revision="mm6.0"/>
+<project path="device/huawei/msm7x27a-common" name="SlimLP-Y300/android_device_huawei_msm7x27a-common" remote="github" revision="mm6.0"/>
      <project path="device/huawei/u8833" name="SlimLP-Y300/android_device_huawei_u8833" remote="github" revision="mm6.0"/>
      <project path="device/huawei/u8951" name="SlimLP-Y300/android_device_huawei_u8951" remote="github" revision="mm6.0"/>
-     <project path="device/huawei/u8825" name="SlimLP-Y300/android_device_huawei_u8825" remote="github" revision="mm6.0"/>
+     <project path="device/huawei/u8825" name="SlimLP-Y300/android_device_huawei_u8825" remote="github" revision="mm6.0"/ -->
+<!-- Device Folders, Kernel & Proprietary BLOBS CM13 tree-->
+     <project path="vendor/huawei" name="CM13-Y300/proprietary_vendor_huawei" remote="github" revision="cm-13.0"/>
+     <project path="kernel/huawei/huawei-kernel-3.4" name="SlimLP-Y300/chil360-kernel" remote="github" revision="mm6.0"/>
+<project path="device/huawei/msm7x27a-common" name="CM13-Y300/android_device_huawei_msm7x27a-common" remote="github" revision="cm-13.0"/>
+     <project path="device/huawei/u8833" name="CM13-Y300/android_device_huawei_u8833" remote="github" revision="cm-13.0"/>
+     <project path="device/huawei/u8951" name="CM13-Y300/android_device_huawei_u8951" remote="github" revision="cm-13.0"/>
+     <project path="device/huawei/u8825" name="CM13-Y300/android_device_huawei_u8825" remote="github" revision="cm-13.0"/>
 
      <!-- WIFI -->
      <project path="hardware/atheros/wifi/ath6kl-huawei" name="SlimLP-Y300/android_hardware_atheros_wifi_ath6kl-huawei" remote="github" revision="master" />
@@ -539,7 +551,12 @@
      <project path="hardware/qcom/display-caf/msm7x27a" name="CM13-Y300/android_hardware_qcom_display-caf" remote="github" revision="cm-13.0" />
      <project path="hardware/qcom/media-caf/msm7x27a" name="SlimLP-Y300/hardware_qcom_media" remote="github" revision="lp5.1" />
 
-     <!-- Stlport -->
-     <project path="external/stlport" name="SlimRoms/android_external_stlport" remote="github" revision="mm6.0" />
+     <!-- Stlport
+     <project path="external/stlport" name="SlimRoms/android_external_stlport" remote="github" revision="mm6.0" / -->
+     <project path="external/stlport" name="CyanogenMod/android_external_stlport" remote="github" revision="cm-13.0" />
+
+     <!-- UBERTC 4.9 kernel toolchain -->
+<!-- remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm" remote="aosp" / -->
+<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="UBERTC/arm-eabi-4.9" groups="pdk,linux,arm" remote="bucket"/>
 
 </manifest>
