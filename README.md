@@ -24,7 +24,7 @@ sync repo :
 Building
 --------
 
-After the sync is finished, please read the [instructions from the Android site](http://s.android.com/source/building.html) on how to build.
+After the sync is finished, please read the [instructions from the Android site](http://s.android.com/source/building.html) on how to build. NOTE: Dont forget to change /kernel/huawei/huawei-kernel-3.4/... arch/msm... config/ u8833_defconfig: _CMA=n !
 
     . build/envsetup.sh
     brunch
