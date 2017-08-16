@@ -20,6 +20,11 @@ sync repo :
     $ repo sync
 
 ***
+Patching
+--------
+Apply patches from aicp7-patches.zip, git am -3 <project>.patch in proper project directory. 
+But seems it not working, even with git apply <project>.patch :( You show patch files manually.
+Overwrite original files with patched ones. Thats it.
 
 Building
 --------
