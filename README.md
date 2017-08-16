@@ -12,7 +12,7 @@ Initializing Repository
 
 Repo initialization:
 
-    $ repo init -u https://github.com/AICP/platform_manifest.git -b kitkat
+    $ repo init -u https://github.com/adeii/AICP_Huawei-manifest.git -b kitkat
 
 
 sync repo :
@@ -24,15 +24,15 @@ sync repo :
 Building
 --------
 
-After the sync is finished, please read the [instructions from the Android site](http://s.android.com/source/building.html) on how to build.
+After the sync is finished, please read the [instructions from the Android site](http://s.android.com/source/building.html) on how to build. This brunch is 4.4.4_r2, newer that kitkat-caf (4.4.2_r2) and working one. Kitkat-caf have blackscreen after bootanimation.
 
     . build/envsetup.sh
-    brunch
+    brunch u8951
 
 
 You can also build (and see how long it took) for specific devices like this:
 
     . build/envsetup.sh
-    time brunch m7
+    time brunch u8833
 
 Remember to `make clobber` every now and then!
